@@ -3,6 +3,7 @@
     "node_modules": "explorerExcludedFiles",
     ".pnp": "explorerExcludedFiles",
     ".pnp.js": "explorerExcludedFiles",
+    ".vscode": "explorerExcludedFiles",
     "coverage": "explorerExcludedFiles",
     "build": "explorerExcludedFiles",
     ".DS_Store": "explorerExcludedFiles",

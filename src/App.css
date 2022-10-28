@@ -1,38 +1,73 @@
-.App {
+*{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.tasksList h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tasksList .emptyList{
+  text-align: center;
+  color: green;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tasksList table{
+  width: 85vw;
+  margin-inline: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tasksList table, td ,th{
+  border: solid 1px black;
+  text-align: center;
+}
+
+.tasksList td:nth-child(1){
+  width: 75%;
+}
+
+.tasksList table th{
+  background-color: lightblue;
+  color: brown;
+}
+
+.tasksList .taskChange{
+  margin-top: 25px;
+  margin-inline: auto;
+  /* display: flex;
+  flex-direction: column; */
+  /* width: 100%; */
+  width: 85vw;
+  text-align: center;
+}
+
+.tasksList .taskChange .inputText{
+  width: 85vw;
+}
+
+.tasksList .taskChange div{
+  width: 85vw;
+}
+
+.tasksList .taskChange div .checkBox{
+  width: 25px;
+  height: 25px;
+}
+
+.tasksList .taskChange div label{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tasksList .taskChange div button{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-inline: auto;
 }
